@@ -27,6 +27,21 @@
 - <img width="1919" height="949" alt="Screenshot 2025-08-22 142134" src="https://github.com/user-attachments/assets/5907d462-a82e-4bc9-82ef-1fabb9158203" />
 
 
+## Day 1 (Part 2) – Custom Role and Test User
+
+- Created custom role: XX_CUSTOM_EMPLOYEE_ROLE
+  - Added Function Security: View Person Profile
+  - Added Data Security: View own Person record
+ 
+- Created new test user: TEST_EMPLOYEE1
+ 
+- Assigned custom role to the test user
+
+## Screen shots
+- <img width="1916" height="937" alt="Screenshot 2025-08-22 151823" src="https://github.com/user-attachments/assets/02a4cdf7-1235-4387-a9e9-622d8ce40a71" />
+- <img width="1826" height="989" alt="Screenshot 2025-08-22 161330" src="https://github.com/user-attachments/assets/85196f08-e5f8-423c-8471-e79f21a5ee6e" />
+- <img width="1650" height="828" alt="Screenshot 2025-08-22 155658" src="https://github.com/user-attachments/assets/28e11640-4f22-4667-a864-6c09edb3482e" />
+
 
 
 
