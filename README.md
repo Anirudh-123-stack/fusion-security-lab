@@ -150,6 +150,75 @@ where ROWNUM <= 10
 <img width="1847" height="996" alt="image" src="https://github.com/user-attachments/assets/f548cf74-42ec-4abb-a073-f5f0cdf18dd6" />
 
 
+# 🚀 Day 2 – BI Publisher Report Debugging (Invoice Report)
+
+## 📌 Objective  
+To create a BI Publisher Report for invoices with vendor filter and debug why data is not showing.
+
+---
+
+## 📝 SQL Query Used
+sql
+SELECT INVOICE_ID,
+       LAST_UPDATE_DATE,
+       LAST_UPDATED_BY,
+       VENDOR_ID,
+       INVOICE_NUM
+FROM ap_invoices_all
+WHERE vendor_id = :p_vendor_id
+  AND ROWNUM <= 10;
+<img width="1891" height="1023" alt="image" src="https://github.com/user-attachments/assets/62de0c38-55f3-49f7-bed7-114091f7fcea" />
+
+<img width="1919" height="1013" alt="Screenshot 2025-08-29 154725" src="https://github.com/user-attachments/assets/6b393140-1ae3-43c4-a868-f8cc8f1af778" />
+
+
+  # 📘 Day 3 – BI Publisher (BIP) Reports
+
+## 🎯 Objective  
+- Learn how to add **multiple parameters** in a BIP report.  
+- Practice with `p_vendor_id`, `p_start_date`, and `p_end_date`.  
+- Validate report output with different combinations.  
+
+---
+
+## 📝 SQL Query  
+
+sql
+SELECT 
+    INVOICE_ID,
+    LAST_UPDATE_DATE,
+    LAST_UPDATED_BY,
+    VENDOR_ID,
+    INVOICE_NUM
+FROM 
+    ap_invoices_all
+WHERE 
+    VENDOR_ID = :p_vendor_id
+    AND LAST_UPDATE_DATE BETWEEN :p_start_date AND :p_end_date
+    AND ROWNUM <= 10;
+<img width="1919" height="1023" alt="Screenshot 2025-08-29 163135" src="https://github.com/user-attachments/assets/03e488b8-3643-41a8-9071-14e426099b9e" />
+
+/**
+ * BI Publisher List of Values (LOV) Queries
+ * For Report: AP Invoice Detail Report
+ * Purpose: These LOVs provide user-friendly dropdowns for report parameters.
+ */
+
+-- =============================================
+-- LOV for Parameter: P_VENDOR_ID
+-- Purpose: Allows user to select a Vendor by name.
+-- The DISPLAY_VALUE is what the user sees.
+-- The RETURN_VALUE is what is passed to the report query.
+-- =============================================
+
+<img width="1891" height="1023" alt="Screenshot 2025-08-29 155809" src="https://github.com/user-attachments/assets/2a1c71bf-3e41-4e77-a3c3-6fb1944b2367" />
+<img width="1508" height="711" alt="Screenshot 2025-08-29 174124" src="https://github.com/user-attachments/assets/90f84e8f-cf91-4938-bfd9-4ea50b5df05b" />
+
+
+
+
+
+
 
 
 
