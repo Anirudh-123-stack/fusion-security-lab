@@ -95,7 +95,7 @@ Learn BI Publisher fundamentals in Fusion with **hands-on practice**:
 2. Add Data Set → Choose **SQL Query**.
 3. Paste SQL:
 
-```sql
+sql
 SELECT INVOICE_ID,
 LAST_UPDATE_DATE,
 LAST_UPDATED_BY,
@@ -148,6 +148,8 @@ where ROWNUM <= 10
 
 
 <img width="1847" height="996" alt="image" src="https://github.com/user-attachments/assets/f548cf74-42ec-4abb-a073-f5f0cdf18dd6" />
+
+
 
 
 
